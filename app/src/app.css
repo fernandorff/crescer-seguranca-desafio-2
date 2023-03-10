@@ -1,0 +1,25 @@
+body {
+    background-image: linear-gradient(to top, #0f0c29, #302b63, #24243e);
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+    opacity: 80%;
+}
+
+button {
+    max-width: 200px;
+}
+
+.dreamCatcherBackground {
+    height: 100vh;
+    width: 100vw;
+}
