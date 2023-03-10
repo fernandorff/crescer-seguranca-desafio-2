@@ -33,6 +33,16 @@
   - `GET /usuarios/me`
 - Detalhar usuario:
   - `GET /usuarios/{usuarioId}`
+- Solicitar nova senha:
+  - `POST /usuarios/novasenha/publico, {
+    "emailNovaSenha": String
+    }`
+- Trocar senha:
+  - `PUT /usuarios/trocarsenha/publico, {
+    "emailNovaSenha": String,
+    "codigo": String,
+    "novaSenha": String
+    }`
 
 <hr>
 

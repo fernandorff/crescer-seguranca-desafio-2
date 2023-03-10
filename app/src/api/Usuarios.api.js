@@ -25,17 +25,6 @@ export function UsuariosAPI() {
     }
   }
 
-  async function getProcurarUsuarios({ query }) {
-    try {
-      const response = await axiosInstance.get(
-        `/usuarios/procurar?query=${query}`
-      );
-      return response.data;
-    } catch (error) {
-      validarErro(error);
-    }
-  }
-
   async function postIncluirUsuario({
     nomeCompleto,
     telefone,
@@ -123,7 +112,6 @@ export function UsuariosAPI() {
     getDetalhesUsuario,
     postIncluirUsuario,
     getListaDeUsuarios,
-    getProcurarUsuarios,
     putEditarUsuario,
     getDadosDoUsuarioLogado,
     postSolicitarNovaSenha,
