@@ -163,9 +163,7 @@ export function LoginView() {
                     O código de recuperação de senha será enviado para o e-mail
                     informado. O código expira em 10 minutos.
                   </Card.Text>
-
                   <Form.Label>Informe o e-mail cadastrado.</Form.Label>
-
                   <Form.Control
                     placeholder="E-mail"
                     type="text"
@@ -199,11 +197,10 @@ export function LoginView() {
                 O código de recuperação de senha foi enviado para o e-mail
                 informado. O código expira em 10 minutos.
               </Card.Text>
-
               <Form onSubmit={handleLogin} className="d-flex flex-column p-1">
+                <Form.Label>E-mail: {formInput.emailNovaSenha}</Form.Label>
                 <Form.Group className="mb-3">
                   <Form.Label>Código de recuperação</Form.Label>
-
                   <Form.Control
                     placeholder="Insira o código de recuperação aqui."
                     type="text"
@@ -212,7 +209,6 @@ export function LoginView() {
                     onChange={handleChange}
                   />
                 </Form.Group>
-
                 <Form.Group className="mb-3">
                   <Form.Label>Nova senha</Form.Label>
                   <Form.Control
